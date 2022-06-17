@@ -1,37 +1,36 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {View, Text, ScrollView, FlatList, SectionList} from 'react-native';
 import styles from './styles';
 import DataCard from '../DataCard';
 import {FloatingAction} from 'react-native-floating-action';
-
 const HomeScreen = ({navigation}) => {
   const DATA = [
     {
       title: '24-12-01',
       data: [
-        {id: 1, date: '24-12-01', product: 'bisc', price: 200},
-        {id: 22, date: '24-12-01', product: 'bisc', price: 200},
-        {id: 23, date: '24-12-01', product: 'bisc', price: 200},
-        {id: 24, date: '24-12-01', product: 'bisc', price: 200},
+        {id: 1, product: 'bisc', price: 200},
+        {id: 2, product: 'cream', price: 200},
+        {id: 3, product: 'maggi', price: 200},
+        {id: 4, product: 'coffee', price: 200},
       ],
     },
     {
-      title: '24-12-01',
+      title: '25-12-01',
       data: [
-        {id: 2, date: '24/12/01', product: 'egg', price: 20000},
-        {id: 32, date: '24/12/01', product: 'egg', price: 200},
-        {id: 34, date: '24/12/01', product: 'egg', price: 200},
+        {id: 5, product: 'egg', price: 20000},
+        {id: 6, product: 'tea', price: 200},
+        {id: 7, product: 'cake', price: 200},
       ],
     },
     {
-      title: '24-12-01',
-      data: [{id: 3, date: '24/12/01', product: 'milk', price: 200}],
+      title: '26-12-01',
+      data: [{id: 8, product: 'milk', price: 200}],
     },
     {
-      title: '24-12-01',
+      title: '27-12-01',
       data: [
-        {id: 4, date: '24/12/01', product: 'oil', price: 200},
-        {id: 114, date: '24/12/01', product: 'kill', price: 200},
+        {id: 9, product: 'oil', price: 200},
+        {id: 10, product: 'kill', price: 200},
       ],
     },
   ];
